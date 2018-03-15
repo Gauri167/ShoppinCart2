@@ -1,0 +1,6 @@
+com\shop\shoppingcart\ApplicationContextTestCaseTest.class
+com\shop\shoppingcart\UserDAOTestCase.class
+com\shop\shoppingcart\CategoryDAOTestCase.class
+com\shop\shoppingcart\ProductDAOTestCase.class
+com\shop\shoppingcart\SupplierDAOTestCase.class
+com\shop\shoppingcart\TestConfiguration.class

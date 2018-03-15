@@ -1,0 +1,13 @@
+com\shop\dao\ProductDAO.class
+com\shop\dao\SupplierDAO.class
+com\shop\domain\User.class
+com\shop\daoimpl\ProductDAOImpl.class
+com\shop\dao\UserDAO.class
+com\shop\daoimpl\CategoryDAOImpl.class
+com\shop\domain\Supplier.class
+com\shop\dao\CategoryDAO.class
+com\shop\daoimpl\UserDAOImpl.class
+com\shop\domain\Category.class
+com\shop\config\ApplicationContextConfig.class
+com\shop\daoimpl\SupplierDAOImpl.class
+com\shop\domain\Product.class
