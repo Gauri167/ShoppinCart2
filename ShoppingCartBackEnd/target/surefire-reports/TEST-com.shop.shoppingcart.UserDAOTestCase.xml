@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="com.shop.shoppingcart.UserDAOTestCase" time="0.954" errors="0" skipped="6">
+<testsuite tests="8" failures="1" name="com.shop.shoppingcart.UserDAOTestCase" time="0.579" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_121\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Gauri Gaur\eclipse-workspace\ECommProject2\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2190602114986200022.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Gauri Gaur\eclipse-workspace\ECommProject2\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf506456493810172167.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files (x86)/Java/jdk1.8.0_121/bin/../jre/bin/server;C:/Program Files (x86)/Java/jdk1.8.0_121/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.8.0_121/bin/../jre/lib/amd64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Java\jdk1.8.0_121\bin;C:\Users\Gauri Gaur\Downloads\apache-maven-3.5.2-bin\apache-maven-3.5.2\bin;C:\Users\Gauri Gaur\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,39 +61,51 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="deleteUserFailureTestCase" time="0.344">
-    <skipped/>
-    <system-out>Data Source bean build
-Session Factory bean build
-Transaction Manager bean build
+  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="deleteUserFailureTestCase" time="0.015"/>
+  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="getUserFailureTest" time="0.032"/>
+  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="getAllUsersTestCase" time="0.078"/>
+  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="validateUserTestCase" time="0.313"/>
+  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="saveUserTestCase" time="0.016"/>
+  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="deleteUserTestCase" time="0.031">
+    <failure message="deleteUserTestCase expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: deleteUserTestCase expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at com.shop.shoppingcart.UserDAOTestCase.deleteUserTestCase(UserDAOTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>Hibernate: select user0_.emailId as emailId1_3_0_, user0_.Mobile as Mobile2_3_0_, user0_.Name as Name3_3_0_, user0_.Password as Password4_3_0_, user0_.RegisterDate as Register5_3_0_, user0_.Role as Role6_3_0_ from User user0_ where user0_.emailId=?
 </system-out>
-    <system-err>Mar 15, 2018 3:32:44 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@77c7ed8e: startup date [Thu Mar 15 15:32:44 IST 2018]; root of context hierarchy
-Mar 15, 2018 3:32:45 PM org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
-INFO: Overriding bean definition for bean &apos;userDAO&apos; with a different definition: replacing [Generic bean: class [com.shop.daoimpl.UserDAOImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\Gauri Gaur\eclipse-workspace\ECommProject2\ShoppingCartBackEnd\target\classes\com\shop\daoimpl\UserDAOImpl.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=applicationContextConfig; factoryMethodName=getUserDAO; initMethodName=null; destroyMethodName=(inferred); defined in com.shop.config.ApplicationContextConfig]
-Mar 15, 2018 3:32:45 PM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
-INFO: Loaded JDBC driver: org.h2.Driver
-Mar 15, 2018 3:32:45 PM org.hibernate.dialect.Dialect &lt;init&gt;
-INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-Mar 15, 2018 3:32:45 PM org.springframework.orm.hibernate5.HibernateTransactionManager afterPropertiesSet
-INFO: Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3f672204] of Hibernate SessionFactory for HibernateTransactionManager
-</system-err>
   </testcase>
-  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="getUserFailureTest" time="0.344">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="getAllUsersTestCase" time="0.031"/>
-  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="validateUserTestCase" time="0.047"/>
-  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="saveUserTestCase" time="0.047">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="deleteUserTestCase" time="0.047">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="getUserSuccessTestCase" time="0.047">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="updateUserTestCase" time="0.047">
-    <skipped/>
-  </testcase>
+  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="getUserSuccessTestCase" time="0.078"/>
+  <testcase classname="com.shop.shoppingcart.UserDAOTestCase" name="updateUserTestCase" time="0.016"/>
 </testsuite>

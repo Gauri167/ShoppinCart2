@@ -43,6 +43,8 @@ public class CategoryController {
 	public ModelAndView saveCategory(@RequestParam("id") String id,
 			                         @RequestParam("") String name,
 			                         @RequestParam("") String description)*/
+	//instead of writing each value one by one
+	//use request body
 	
 	public ModelAndView saveCategory(@RequestBody Category category)
 	{

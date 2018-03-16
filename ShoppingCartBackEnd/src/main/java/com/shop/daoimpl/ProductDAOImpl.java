@@ -80,11 +80,15 @@ public class ProductDAOImpl implements ProductDAO{
 
 	public Product getCategory(Category category) {
 		
+		// slt missed 
+		// to be completed
 		return null;
 	}
 
 	public Product getSupplier(Supplier supplier) {
 		
+		//slt missed
+		//to be completed
 		return null;
 	}
 

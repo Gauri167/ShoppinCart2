@@ -18,6 +18,9 @@ public class Supplier {
 	private String name;
 	@Column(name="Address")
 	private String address;
+	
+	//Mapping to be done
+	
 	public String getId() {
 		return id;
 	}

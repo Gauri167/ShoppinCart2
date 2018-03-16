@@ -19,6 +19,9 @@ public class Category {
 	@Column(name="Description")
 	private String description;
 	
+	// slt missed 
+	// mapping needs to be done
+	
 	public String getId() {
 		return id;
 	}

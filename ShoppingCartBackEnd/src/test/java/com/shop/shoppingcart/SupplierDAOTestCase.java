@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import java.util.List;
 
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -29,18 +28,18 @@ public class SupplierDAOTestCase {
 		supplierDAO=(SupplierDAO)context.getBean("supplierDAO");
 		supplier=(Supplier)context.getBean("supplier");
 	}
-	@Ignore
+	
 	@Test
 	public void saveSupplierTestCase() {
 		
-		supplier.setId("SUP-006");
+		supplier.setId("SUP-007");
 		supplier.setName("BigC");
 		supplier.setAddress("Mumbai");
 		
 		boolean status=supplierDAO.save(supplier);
 		assertTrue("saveSupplierTestCase",status);
 	}
-	@Ignore
+	
 	@Test
 	public  void updateSupplierTestCase() {
 		
@@ -50,27 +49,27 @@ public class SupplierDAOTestCase {
 		boolean status=supplierDAO.update(supplier);
 		assertEquals("updateSupplierTestCase",true,status);
 	}
-	@Ignore
+	
 	@Test
 	public void deleteSupplierSuccessTestCase() {
 		
-		boolean status=supplierDAO.delete("SUP-005");
+		boolean status=supplierDAO.delete("SUP-006");
 		assertEquals("deleteSupplierSuccessTest",true,status);
 	}
-	@Ignore
+	
 	@Test
 	public void deleteSupplierFailureTestCase() {
 		boolean status=supplierDAO.delete("SUP-101");
 		assertEquals("deleteSupplierFailureTestCase",false,status);
 	}
-	@Ignore
+	
 	@Test
 	public void getSupplierSuccessTestCase() {
 		
 		supplier=supplierDAO.get("SUP-003");
 		assertNotNull("getSupplierSuccessTestCase",supplier);
 	}
-	@Ignore
+	
 	@Test
 	public void getSupplierFailureTestCase() {
 		

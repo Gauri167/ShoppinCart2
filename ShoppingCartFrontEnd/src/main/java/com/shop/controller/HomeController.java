@@ -2,6 +2,8 @@ package com.shop.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +18,8 @@ public class HomeController {
 	@Autowired
 	private CategoryDAO categoryDAO;
 	
-	
+	@Autowired
+	private HttpSession httpSession;
 	
 	@RequestMapping("/")
 	public ModelAndView home()
@@ -26,9 +29,9 @@ public class HomeController {
 		// for this first Autowire categoryDAO and Category
 		
 		List<Category> categories=categoryDAO.categorylist();
-		mv.addObject("categories",categories);
-		mv.addObject("welcomeMessage","Welcome");
-		
+		//mv.addObject("categories",categories);
+		//mv.addObject("welcomeMessage","Welcome");
+		httpSession.setAttribute("categories",categories);
 		return mv;
 	}
 	
